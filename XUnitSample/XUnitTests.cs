@@ -24,7 +24,7 @@ public class XUnitTests
     [InlineData("Hello", new string[] { "Hello" })]
     [InlineData("Hello World", new string[] { "Hello", "World" })]
     [InlineData("Hello Great World", new string[] { "Hello", "Great", "World" })]
-    public void TestSplits(string strToSplit, IEnumerable<string> expectedSplit)
+    public void TestSplits(string strToSplit, string[] expectedSplit)
     {
         string[] split = strToSplit.Split(' ', StringSplitOptions.RemoveEmptyEntries);
 
